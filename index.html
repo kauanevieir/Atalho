@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+    <link rel="shortcut icon" href="icon.png">
+    <title>Casa Vieira Vinos</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+       
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="index.html">Contato</a>
+            <a href="https://www.divinho.com.br/blog/o-que-e-vinho/" id="sobre">Sobre (Ctrl+Q)</a>
+        </nav>
+    </header>
+    
+    <div id="vinhos">
+        <img src="vinhos.png" alt="Vinhos">
+    </div>
+    <div id="vinho-container">
+        <a href="file:///C:/Users/win10/Documents/3%C2%B0%20Inform%C3%A1tica%20-%20Trabalhos/Kauane%20Vieira/Atalhos%20no%20Teclado%20-%20Acessibilidade/vinhota%C3%A7a.png">
+            <img src="vinhotaça.png" alt="Vinhos" id="vinho-img">
+        </a>
+    </div>
+    
+    <div id="corpo">
+        <center><h1>Casa Vieira Vinos</h1></center>
+        <p>
+            A Casa Vieira Vinhos é uma vinícola que se destaca por sua tradição, excelência na produção e conexão profunda com
+            a história da viticultura local. Cada garrafa de vinho reflete um compromisso inabalável com a qualidade, combinando
+            técnicas tradicionais e inovação cuidadosa para criar vinhos que encantam os sentidos e contam histórias do terroir. A visita à Casa Vieira
+            Vinhos é uma jornada sensorial única, onde os aromas e sabores convidam os apreciadores a uma experiência memorável.
+        </p>
+        
+        <div id="mensagem-form">
+            <h3>Nos mandem sugestões!</h3>
+            <input type="text" id="mensagem-input" placeholder="Digite sua mensagem">
+            <button id="enviar-btn">Enviar</button>
+        </div>
+    </div>
+    <footer>
+        <center><p>Desenvolvido por Kauane Vieira</p></center>
+    </footer>
+    <script>
+        document.addEventListener("keydown", function(event){
+            if (event.ctrlKey && event.key === "q"){
+                window.location.href = "https://www.divinho.com.br/blog/o-que-e-vinho/"; // Navegar para a âncora com o id "sobre"
+            }
+            if (event.ctrlKey && event.key === "i"){
+                window.open("vinhotaça.png", "_blank"); // Abrir em uma nova guia
+            }
+            if (event.ctrlKey && event.key === "m"){
+                document.getElementById("mensagem-input").focus();
+            }
+        });
+    </script>
+</body>
+</html>
